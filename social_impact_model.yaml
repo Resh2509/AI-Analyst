@@ -1,0 +1,16 @@
+name: Financial_Inclusion_Analyst
+description: "Analyst for social impact and fraud detection across bank and insurance data."
+tables:
+  - name: CROSS_ORG_INSIGHTS
+    base_table:
+      database: SHARED_ZONE
+      schema: public
+      table: CROSS_ORG_INSIGHTS
+    dimensions:
+      - name: AGE_GROUP
+        synonyms: ["demographic", "age bracket", "age"]
+    measures:
+      - name: TOTAL_INSURANCE_CLAIMS
+        synonyms: ["claims", "payouts", "insurance cost"]
+      - name: AVG_CREDIT_SCORE
+        synonyms: ["credit health", "financial risk"]
